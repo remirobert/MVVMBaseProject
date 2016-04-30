@@ -16,6 +16,8 @@ To install this base project, for your new app, just run the script *install.sh*
 
 #Architecture
 
+####MVVM
+
 The structure of the base project is based on the **MVVM** (*Model-View-ViewModel*) architecture.
 
 ![ic564167](https://cloud.githubusercontent.com/assets/3276768/14935286/4cc0b0f2-0efe-11e6-93b0-1e639a3d659a.png)
@@ -29,3 +31,8 @@ That means the **UIViewController** manage only the view (binding data to the *U
 So **UIViewController** doesn't know anything about the model, and the data, its role is to bind the data in **UIView** from the **ViewModel**. Then **ViewModel** doesn't know anything about the **UIView** (interaction, etc).
 
 To handle the communication between the **UIViewController** and the **ViewModel**, I use **RxSwift**, to observe the data, and bind it with the **UIView** (*Any Reactive programing framework can be use here. You can event use some delegate pattern*).
+
+####AppCoordinator
+
+The idea being that, is to handle the transitions, and instanciations between **UIViewController** outside the controllers.
+Each **UIViewController** perform, the **protocol Coordinable**.
