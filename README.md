@@ -91,7 +91,7 @@ class LoginViewController: UIViewController, Coordinable {
 
 `MVVMBaseProject` is released under an [MIT License][mitLink]. See `LICENSE` for details.
 
->**Copyright &copy; 2015 Rémi ROBERT.**
+>**Copyright &copy; 2016 Rémi ROBERT.**
 
 *Please provide attribution, it is greatly appreciated.*
 
