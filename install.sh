@@ -19,17 +19,10 @@ if [ $# -ne 1 ]; then
     exit 1
 fi
 
-# Setting system variables
 LC_CTYPE=C
 LANG=C
-
 OLDNAME="App"
-
-
-# Replace all the spaces from the new name with underscore, because using spaces is evil.
-# NEWNAME=$(echo $1 | sed 's/ /_/g')
 NEWNAME=${1// /_}
-
 
 echo "rename $OLDNAME to $NEWNAME"
 mv "$OLDNAME" "$NEWNAME"
