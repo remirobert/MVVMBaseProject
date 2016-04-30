@@ -1,5 +1,4 @@
-# MVVMBaseProject
-
+<img width="444" alt="screen shot 2016-04-30 at 17 52 16" src="https://cloud.githubusercontent.com/assets/3276768/14935221/65cda908-0efc-11e6-993c-6bca57faeb62.png">
 
 As is common in every app development cycle, there comes a time when we must start setting up a project. And this is pretty much always the same steps. Setting up folders, architecture, Podfile, etc.
 
