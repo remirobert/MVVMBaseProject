@@ -36,7 +36,7 @@ This design pattern will avoid you the **MEGA UIViewController** (thanks god ðŸ™
 
 ####AppCoordinator
 
-The idea being that is to remove the **UIViewController** initalisation outside the application context.
+The idea being that is to move the **UIViewController** initalisation outside the application context by :
 
  - manage the transitions between **UIViewController**, and the way to present them (*present, push, show, etc*)
  - initialise the **ViewModel** for each **UIViewController**
