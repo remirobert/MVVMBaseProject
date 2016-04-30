@@ -15,3 +15,12 @@ To install this base project, for your new app, just run the script *install.sh*
 ![tty](https://cloud.githubusercontent.com/assets/3276768/14935252/5b072566-0efd-11e6-9842-28ae8d7ace0e.gif)
 
 #Architecture
+
+The structure of the base project is based on the **MVVM** (*Model-View-ViewModel*) architecture.
+
+There are three core components in the MVVM pattern: the model, the view, and the view model. Each serves a distinct and separate role. The following illustration shows the relationships between the three components.
+In the **iOS development** the UIViewController has the UIView, and the controller. Each **UIViewController** has its one **ViewModel**.
+
+That means the **UIViewController** manage only the view (binding data to the *UIView*). And the **ViewModel** handle the data with the model (*perform request, formating data before binding, etc*).
+
+So **UIViewController** doesn't know anything about the model, and the data, its role is to bind the data in **UIView** from the **ViewModel**. Then **ViewModel** doesn't know anything about the **UIView** (interaction, etc).
