@@ -36,7 +36,7 @@ find . -type f  -print0 | xargs -0 sed -i '' "s/${OLDNAME}/${NEWNAME}/g"
 echo "Rename completed"
 rm -rfv *.xcworkspace
 
-echo "Installe pods"
+echo "Install pods"
 pod install
 
 echo "remove setup files"
