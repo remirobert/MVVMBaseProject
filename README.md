@@ -11,6 +11,8 @@ This is a base project in **Swift**, for **iOS** application. This base project 
 To install this base project, for your new app, just run the script *install.sh*. This will rename the base project with your app name, and install pods. After that, you will be ready to go.
 
 ```sh
+git clone https://github.com/remirobert/MVVMBaseProject.git
+cd MVVMBaseProject
 ./install.sh YOUR_APP_NAME
 ```
 
