@@ -18,6 +18,9 @@ To install this base project, for your new app, just run the script *install.sh*
 
 The structure of the base project is based on the **MVVM** (*Model-View-ViewModel*) architecture.
 
+![ic564167](https://cloud.githubusercontent.com/assets/3276768/14935286/4cc0b0f2-0efe-11e6-93b0-1e639a3d659a.png)
+
+
 There are three core components in the MVVM pattern: the model, the view, and the view model. Each serves a distinct and separate role. The following illustration shows the relationships between the three components.
 In the **iOS development** the UIViewController has the UIView, and the controller. Each **UIViewController** has its one **ViewModel**.
 
