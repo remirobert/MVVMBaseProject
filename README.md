@@ -56,6 +56,8 @@ private func instanceLoginController() {
        self.instanceFeedController()
   })
   
+  //init ViewModel, can passe some data from other controllers
+  vc.viewModel = LoginViewModel()
   self.rootController = UINavigationController(rootViewController: vc)
   vc.start()
 }
@@ -72,7 +74,7 @@ class LoginViewController: UIViewController, Coordinable {
     var transitions: LoginTransitions?
  
     typealias ViewModel = LoginViewModel
-    var viewmodel: ViewModel?
+    var viewModel: ViewModel?
  
     func didLoginUser() {
       ...
