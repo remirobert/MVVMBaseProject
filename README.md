@@ -88,6 +88,9 @@ class LoginViewController: UIViewController, Coordinable {
 }
 ```
 
+made in 同济 with ❤️
+
+
 If you have any suggestion to improve this architecture, or some reckon, please be free to tell me. All the **pull request** are welcome And also don't forget to ⭐️ if you like it 😉.
 
 ![ezgif-1103114166](https://cloud.githubusercontent.com/assets/3276768/14935398/e087e6ee-0f02-11e6-9469-16ac856aa2ff.gif)
