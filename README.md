@@ -80,6 +80,9 @@ class LoginViewController: UIViewController, Coordinable {
 }
 ```
 
+![ezgif-1103114166](https://cloud.githubusercontent.com/assets/3276768/14935398/e087e6ee-0f02-11e6-9469-16ac856aa2ff.gif)
+
+
 ## License
 
 `MVVMBaseProject` is released under an [MIT License][mitLink]. See `LICENSE` for details.
