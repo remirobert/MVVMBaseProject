@@ -28,6 +28,8 @@ So, in the **iOS development** the UIViewController has the UIView, and the cont
 
 To handle the communication between the **UIViewController** and the **ViewModel**, I use **RxSwift**, to observe the data, and bind it with the **UIView** (*Any Reactive programing framework can be use here. You can event use some delegate pattern*).
 
+This design pattern will avoid you the **MEGA UIViewController** (thanks god 🙏).
+
 ####AppCoordinator
 
 The idea being that is to remove the **UIViewController** initalisation outside the application context.
