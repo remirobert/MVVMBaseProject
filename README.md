@@ -34,5 +34,11 @@ To handle the communication between the **UIViewController** and the **ViewModel
 
 ####AppCoordinator
 
-The idea being that, is to handle the transitions, and instanciations between **UIViewController** outside the controllers.
-Each **UIViewController** perform, the **protocol Coordinable**.
+The idea being that is to remove the **UIViewController** initalisation outside the application context.
+
+ - manage the transitions between **UIViewController**, and the way to present them (*present, push, show, etc*)
+ - initialise the **ViewModel** for each **UIViewController**
+ - handle the data flow between **UIViewController**
+
+At this point each **UIViewController**, are less or more very generic, and can be reused in an another application very easily.
+
