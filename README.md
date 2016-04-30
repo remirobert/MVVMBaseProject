@@ -12,4 +12,6 @@ To install this base project, for your new app, just run the script *install.sh*
 ./install.sh YOUR_APP_NAME
 ```
 
+![tty](https://cloud.githubusercontent.com/assets/3276768/14935252/5b072566-0efd-11e6-9842-28ae8d7ace0e.gif)
+
 #Architecture
