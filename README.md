@@ -27,3 +27,5 @@ In the **iOS development** the UIViewController has the UIView, and the controll
 That means the **UIViewController** manage only the view (binding data to the *UIView*). And the **ViewModel** handle the data with the model (*perform request, formating data before binding, etc*).
 
 So **UIViewController** doesn't know anything about the model, and the data, its role is to bind the data in **UIView** from the **ViewModel**. Then **ViewModel** doesn't know anything about the **UIView** (interaction, etc).
+
+To handle the communication between the **UIViewController** and the **ViewModel**, I use **RxSwift**, to observe the data, and bind it with the **UIView** (*Any Reactive programing framework can be use here. You can event use some delegate pattern*).
