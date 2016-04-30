@@ -42,3 +42,45 @@ The idea being that is to remove the **UIViewController** initalisation outside 
 
 At this point each **UIViewController**, are less or more very generic, and can be reused in an another application very easily.
 
+example for a *LoginViewController*:
+
+*AppCoordinator.swift*:
+```swift
+private func instanceLoginController() {
+  guard let vc = LoginViewController.instanceController(StoryBoards.Login) as? LoginViewController else {
+     return
+  }
+  
+  vc.transitions = LoginTransitions(
+     didLogin: {
+       self.instanceFeedController()
+  })
+  
+  self.rootController = UINavigationController(rootViewController: vc)
+  vc.start()
+}
+```
+
+*LoginViewController.swift*:
+```swift
+struct LoginTransitions {
+    var didLogin: (Void -> Void)
+}
+
+class LoginViewController: UIViewController, Coordinable {
+
+    var transitions: LoginTransitions?
+ 
+    typealias ViewModel = LoginViewModel
+    var viewmodel: ViewModel?
+ 
+    func didLoginUser() {
+      ...
+  
+      self.transitions?.didLogin()
+    }
+ 
+    ...
+}
+```
+
