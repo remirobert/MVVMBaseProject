@@ -20,6 +20,19 @@ cd MVVMBaseProject
 
 #Architecture
 
+####📱 production / 🛠 development
+
+The project has two different targets, **prod** and **dev**. And with the marco **DEV**, you can configure some global variables like the *URL of your server*, etc. Also two different LaunchScreens are provided to avoid confusion when you are developing your app.
+
+This is how you can setup some variables depending on your developement environement. You can switch easily between two modes with the schemes.
+```Swift
+#if DEV
+let SERVER_URL = "http://dev.server.com/api/"
+#else
+let SERVER_URL = "http://prod.server.com/api/"
+#endif
+```
+
 ####MVVM
 
 The structure of the base project is based on the **MVVM** (*Model-View-ViewModel*) architecture.
